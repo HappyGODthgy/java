@@ -2,13 +2,13 @@ package jump2java;
 
 public class ysy2 {
 	public static void main(String[]args) {
-		int money = 2000;
-		boolean hasCard = true;
-		
-		if(money>=3000 || hasCard) {
-			System.out.println("택시를 타고 가라");
-		}else {
-			System.out.println("걸어가라");
+		int a = 0;
+		while (a < 10) {
+			a++;
+			if (a % 2 == 0) {
+				continue;
+			}
+			System.out.println(a);
 		}
 	}
 }

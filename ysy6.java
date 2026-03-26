@@ -1,18 +1,16 @@
 package jump2java;
 
+import java.util.ArrayList;
 public class ysy6 {
 	public static void main(String[]args) {
-		int money = 10000;
-		int coffee = 2;
+		ArrayList<String> numbers = new ArrayList<>();
+		numbers.add("one");
+		numbers.add("two");
+		numbers.add("three");
 		
-		while (money > 3000) {
-			System.out.println("커피 드립니다.");
-		coffee--;
-		money -= 3000;
-		if(coffee == 0) {
-			break;
+		for (String number : numbers) {
+			System.out.println(number);
 		}
 		
-		}
 	}
 }

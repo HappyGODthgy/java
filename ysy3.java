@@ -1,19 +1,14 @@
 package jump2java;
 
-import java.util.ArrayList;
-
 public class ysy3 {
-	public static void main(String[]args) {
-		ArrayList<String> pocket = new ArrayList<String>();
-		pocket.add("paper");
-		pocket.add("cellphone");
-		pocket.add("money");
-	
-		if(pocket.contains("money")) {
-			System.out.println("택시를 타고 가라");
-		}else {
-			System.out.println("걸어가라");
+	public static void main(String[] args) {
+		int a = 0;
+		while (a < 10) {
+			a++;
+			if (a % 2 != 0) {
+				continue;
+			}
+			System.out.println(a);
 		}
-	
 	}
 }
