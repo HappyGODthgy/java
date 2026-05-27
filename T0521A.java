@@ -2,13 +2,11 @@ package jump2java;
 import java.util.Scanner;
 
 class Student{
-	String name;
-	int studentNumber;
-	double score;
+	String name;	int studentNumber;	double score;
 	
-	Student(String name, int sN) {
-		this.name = name;
-		this.studentNumber = sN;
+	Student(String name, int sN){
+		 this.name = name;
+		 this.studentNumber = sN;
 	}
 	
 	void setScore(double score) {
@@ -16,11 +14,11 @@ class Student{
 		System.out.println(this.score);
 	}
 	
-	double setScore1(double score) {
+	double setScore2(double score) {
 		this.score = score;
 		return this.score;
 	}
-}	
+}
 
 public class T0521A {
 	public static void main(String[] args) {
@@ -34,12 +32,14 @@ public class T0521A {
 		sc.close();
 		
 		Student s1 = new Student(name, sN);
-		Student s2 = new Student("대중", 000000);
+		//Student s2 = new Student("대중", 000000);
 		
 		s1.setScore(score);
-		System.out.println("점수는 "+s1.setScore1(score)+"점");
-		
-		
+		System.out.println("점수는 "+s1.setScore2(score)+"점");
 		
 	}
 }
+
+
+
+
